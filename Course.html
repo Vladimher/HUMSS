@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Option Page</title>
+	<style>
+        body {
+            background-image: url("https://media.gettyimages.com/id/1356443550/video/abstract-glitter-background-bokeh-shallow-depth-of-field-selective-focus-green-version.jpg?s=640x640&k=20&c=urYXnur50snEI7ow5P16924Qa7T1RTYm2gKao5V9664=");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+		
+		nav {
+            background-color: rgba(3, 172, 19, 0.9);
+            width: 98.5%;
+            padding: 10px;
+            border-radius: 10px;
+			margin-top: 0px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li button {
+            background-color: rgba(3, 172, 19, 0.9);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }  
+
+        nav ul li button:hover {
+            background-color: #043927;
+            transform: scale(1.1);
+        }
+
+        nav ul li .dropdown {
+            display: none;
+            position: absolute;
+            background-color: rgba(3, 172, 19, 0.9);
+            min-width: 160px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        nav ul li .dropdown button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+        }
+
+        nav ul li .dropdown button:hover {
+            background-color: #043927;
+        }
+		
+		.header-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            width: 95%;
+            border: 5px solid black;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px;
+            width: 95%;
+            border: 5px solid black;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .content-box img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .footer-box {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            width: 95%;
+            border: 5px solid black;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-top: auto;
+        }
+		
+		.upperheader-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 95%; 
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+		
+		h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+		
+		h2 {
+		    font-size: 30px;
+		}
+		
+		.footer-box p {
+            font-size: 14px;
+            margin: 0;
+        }
+		
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        body > * {
+            animation: fadeIn 1.5s ease-out;
+        }
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+		    <li><button onclick="window.open('Next.html')">Home</button>
+            <li>
+                <button>Grade Level</button>
+                <ul class="dropdown">
+                    <li><button onclick="window.open('G11.html')">Grade 11</button></li>
+                    <li><button onclick="window.open('G12.html')">Grade 12</button></li>
+                </ul>
+            </li>
+            <li><button onclick="window.open('Course.html')">Course Options</button></li>
+            <li><button onclick="window.open('About.html')">About Us</button></li>
+        </ul>
+    </nav>
+	
+	<div class="upperheader-box">
+	</div>
+	
+	<div class="header-box">
+        <h1>Your Course Option</h1>
+	</div>
+	
+	<div class="upperheader-box">
+	</div>
+	
+	<div class="header-box">
+		<p>The Humanities and Social Sciences (HUMSS) strand serves as a gateway to a wide array of course options in college, each designed to prepare students for fulfilling careers in fields that prioritize critical thinking, communication, and the study of human society and culture. Here are some of the many courses HUMSS graduates can pursue, along with their respective descriptions:</p>
+	</div>
+	
+	<div class="content-box">
+	    <img src="https://www.maishahuru.com/img/bachelor-of-arts-in-mass-communication-in-tanzania.jpg">
+		<div>
+		    <h2> Bachelor of Arts in Communication</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  This course focuses on developing effective communication skills in various media platforms, including journalism, broadcasting, and public relations. Students learn to craft compelling messages and manage information dissemination in diverse industries.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Public Relations Specialist<br>
+			Manage communication between organizations and their audiences, build brand reputation, and handle crisis communication.<br>
+			Bachelor’s Degree: 4 years
+			Optional Master’s Degree: 2 years
+			Internship in PR Firms or Organizations: 3 months - 1 year
+			Work Experience: 1-3 years
+			Optional Certifications: 3 months - 1 year per certification</li><br>
+		    <li>Media and Broadcasting Professional<br>
+			Work as a news anchor, reporter, producer, or editor in television, radio, or online media outlets.<br>
+			Bachelor's Degree: 4 years
+            Internship: 2-3 months
+            Work Experience: 1-3 years
+            Optional Certifications: 1-6 months</li><br>
+		    <li>Corporate Communications Officer<br>
+			Develop internal and external communication strategies, including newsletters, speeches, and press releases.<br>
+			Bachelor's Degree: 4 years
+            Internship: 2-3 months
+            Work Experience: 2-4 years
+            Optional Certifications: 1-3 months</li><br>
+			<li>Content Creator/Digital Marketer<br>
+			Create and manage content for social media, blogs, or marketing campaigns, focusing on storytelling and audience engagement.<br>
+			Bachelor's Degree: 4 years
+			Internship: 2-3 months
+			Work Experience: 1-2 years
+			Certifications: 1-3 months each</li><br>
+		    <li>Film and Video Producer<br>
+			Write, direct, or produce films, documentaries, or advertisements.<br>
+			Bachelor's Degree: 4 years
+			Internship: 2-3 months
+			Work Experience:: 2-5 years
+			Optional Certifications: 1-3 months per certification</li><br>
+		</div>
+	</div>
+	
+	<div class="content-box">
+	    <img src="https://psychology.arizona.edu/sites/default/files/styles/az_large/public/2022-09/BS%20header_0.png.webp?itok=QGx1Bx1L">
+		<div>
+		    <h2>Bachelor of Science in Psychology</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  A course that delves into human behavior and mental processes, equipping students with the skills to analyze, assess, and assist individuals in improving their mental well-being. It is also a strong foundation for pursuing a career in clinical psychology, counseling, or human resources.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Human Resources Specialist<br>
+			Bachelor’s Degree: 4 years<br>
+			Internship: 3-6 months<br>
+			Work Experience: 1-2 years<br>
+			Certification: 1-6 months<br>
+			Master’s Degree (optional for advancement): 2 years</li><br>
+			<li>Mental Health Technician<br>
+			Assist mental health professionals in providing care to patients with mental illnesses or emotional difficulties.<br>
+			Bachelor's or Associate’s Degree: 2-4 years<br>
+			Internship: 2-6 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+			<li>Behavioral Therapist<br>
+			Work with individuals (often children or those with developmental disorders) to address behavioral challenges using evidence-based techniques.<br>
+			Bachelor's Degree: 4 years<br>
+			Internship: 2-6 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+			<li>Mental Health Assistant<br>
+			Support psychologists or psychiatrists in providing care to patients with mental health challenges.<br>
+			Bachelor's Degree: 4 years<br>
+			Internship: 2-6 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+			<li>Psychometrician<br>
+			Administer and interpret psychological tests to assess individuals' cognitive, emotional, and behavioral characteristics.<br>
+			Bachelor's Degree: 4 years<br>
+			Internship: 6 months - 1 year<br>
+			Licensure Exam Preparation: 1-2 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+		</div>
+	</div>
+	
+	<div class="content-box">
+	    <img src="https://www.aeccglobal.com.ph/images/2023/01/02/study-social-work-courses.webp">
+		<div>
+		    <h2>Bachelor of Science in Social Work</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  This program trains students to address social issues and improve the quality of life of individuals, families, and communities. It combines theoretical knowledge and practical fieldwork to build compassionate and competent social workers.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Clinical Social Worker<br>
+			Provide counseling and therapy to individuals, families, and groups to address mental health, substance abuse, or behavioral issues.<br>
+			Bachelor's Degree: 4 <br>
+			Master’s Degree in Social Work: 2 years<br>
+			Internship: 6 months - 1 year<br>
+			Licensure Exam Preparation: 1-2 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+			<li>Child and Family Social Worker<br>
+			Help children and families improve their living situations, ensure child welfare, and provide support for foster care or adoption.<br>
+			Bachelor's Degree: 4 years<br>
+			Master’s Degree(Optional): 2 years<br>
+			Internship: 6 months - 1 year<br>
+			Licensure Exam Preparation: 1-2 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+			<li>Healthcare Social Worker<br>
+			Assist patients in understanding and coping with medical diagnoses, coordinating care, and connecting with resources.<br>
+			Bachelor's Degree: 4 years<br>
+			Master’s Degree(Optional): 2 years<br>
+			Internship: 6 months - 1 year<br>
+			Licensure Exam Preparation: 1-2 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+			<li>Community Outreach Speicalist<br>
+			Design and implement programs to address community needs, raise awareness of social issues, and provide support services.<br>
+			Bachelor's Degree: 4 years<br>
+			Internship: 6 months - 1 year<br>
+			Work Experience: 1-3 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+			<li>School Social Worker<br>
+			Work within educational settings to support students dealing with academic, social, or emotional challenges.<br>
+			Bachelor's Degree: 4 years<br>
+			Master’s Degree(Optional): 2 years<br>
+			Internship: 6 months - 1 year<br>
+			Licensure Exam Preparation: 1-2 months<br>
+			Work Experience: 1-2 years<br>
+			Optional Certifications: 1-3 months per certification</li><br>
+		</div>
+	</div>
+	
+	<div class="content-box">
+	    <img src="https://www.maishahuru.com/img/bachelor-of-arts-in-political-science-and-public-administration-in-tanzania.jpg">
+		<div>
+		    <h2> Bachelor of Arts in Political Science</h2>
+			<p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  Students explore government systems, political theories, and public policies. This course prepares them for careers in governance, law, or international relations by developing their analytical and decision-making skills.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Policy Analyst<br>
+			Research, evaluate, and develop public policies for government agencies, think tanks, or non-profit organizations.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship : 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional) 3-6 months per certification</li><br>
+			<li>Legislative Assistant<br>
+			Support elected officials by researching legislation, drafting speeches, and communicating with constituents.<br>
+			Bachelor's Degree: 4 years<br>
+		    Master’s Degree(Optional): 2 years<br>
+		    Internship: 3 months - 1 year<br>
+		    Work Experience: 1-2 years<br>
+		    Optional Certifications: 1-3 months per certification</li><br>
+			<li>Diplomat/Foreign Service Officer<br>
+			Represent your country abroad, manage diplomatic relations, and work on international issues such as trade, security, and humanitarian efforts.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Foreign Service Examination Preparation: 6 months - 1 year<br>
+Internship: 3 months - 1 year<br>
+Work Experience: 1-3 years<br>
+Optional Certifications: 1-3 months per certification</li><br>
+			<li>Political Campaign Manager<br>
+			Plan and manage election campaigns, including fundraising, communication strategies, and voter outreach.<br>
+			Bachelor’s Degree: 4 years<br>
+Optional Master’s Degree: 2 years<br>
+Internship: 3 months - 1 year<br>
+Work Experience: 1-3 years<br>
+Optional Certifications: 3-6 months per certification</li><br>
+			<li>Public Relation Specialist<br>
+			Develop and manage the public image of organizations, government agencies, or political figures.<br>
+			Bachelor’s Degree: 4 years<br>
+Optional Master’s Degree: 2 years<br>
+Internship: 3 months - 1 year<br>
+Work Experience: 1-3 years<br>
+Optional Certifications: 3 months - 1 year per certification</li>
+		</div><br>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMhzEqX8xb4Vi66-bP0hEucK0XlplD4pp0Q&s">
+		<div>
+		    <h2>Bachelor of Science in Criminology</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  A course that prepares students to understand criminal behavior, law enforcement procedures, and the justice system. Graduates often pursue careers as police officers, forensic analysts, or crime investigators.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Law Enforcement Officer<br>
+			Work as a police officer, detective, or federal agent, investigating crimes, enforcing laws, and ensuring public safety.<br>
+			Bachelor’s Degree: 4 years<br>
+Criminologist Licensure Examination	Preparation: 3-6 months<br>
+PNP Entrance Exam (if joining PNP): 1 day<br>
+Physical Fitness Test: 1 day<br>
+Law Enforcement Training (PNP Academy or NBI): 6 months - 1 year<br>
+Work Experience as a Law Enforcement Officer: 1-3 years<br>
+Optional Specialized Certifications: 3 months - 1 year per certification</li><br>
+			<li>Forensic Science Technician<br>
+			Analyze crime scene evidence, such as fingerprints, DNA, and ballistic data, to assist in criminal investigations.<br>
+			Bachelor’s Degree: 4 years<br>
+Optional Criminologist Licensure Exam: Preparation: 3-6 months (if applicable)<br>
+Internship: 3 months - 1 year<br>
+Work Experience: 1-3 years<br>
+Optional Forensic Certifications: 3 months - 1 year per certification</li><br>
+			<li>Correction Officer<br>
+			Manage inmates in prisons, jails, or detention centers, ensuring safety and security within the facility.<br>
+			Bachelor’s Degree: 4 years<br>
+Criminologist Licensure Exam Preparation: 3-6 months<br>
+Civil Service Exam Preparation: a few months<br>
+Physical Fitness Test: 1 day<br>
+On-the-Job Training or Correctional Training: 6 months to 1 year<br>
+Work Experience: 1-3 years<br>
+Optional Specialized Certifications: 3 months to 1 year per certification</li><br>
+			<li>Probation or Parole Officer<br>
+			Supervise individuals on probation or parole, ensuring compliance with legal requirements and assisting with reintegration into society.<br>
+			Bachelor’s Degree: 4 years<br>
+Civil Service Exam Preparation: 3-6 months (for government positions)<br>
+On-the-Job Training or Internships: 3 months to 6 months<br>
+Work Experience: 1-3 years<br>
+Optional Specialized Certifications: 3 months to 1 year per certification</li><br>
+			<li>Criminologist or Criminal Analyst<br>
+			Study crime patterns, behaviors, and trends to inform policy development and crime prevention strategies.<br>
+			Bachelor’s Degree: 4 years<br>
+Criminologist Licensure Exam Preparation: 3-6 months (for criminologists)<br>
+Internship or On-the-Job Training: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Optional Specialized Certifications: 3 months to 1 year per certification</li><br>
+		</div>	
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://ccap.co.ke/wp-content/uploads/2021/01/Literature-263x263.jpg">
+		<div>
+		    <h2>Bachelor of Arts in Literature</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  This course immerses students in the study of literary works across cultures and eras. It develops skills in critical analysis, creative writing, and cultural understanding, making graduates suitable for careers in writing, editing, or academia.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Writer/Author<br>
+			Create original content, including novels, short stories, poetry, scripts, or non-fiction.<br>
+			Bachelor’s Degree: 4 years<br>
+Optional Writing Workshops or Certificate Courses: 3 months to 1 year (optional)<br>
+Internship/Work Experience: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Optional Specialized Certifications: 3months to 1 year (optional)</li><br>
+			<li>Editor<br>
+			Review and refine written content for books, magazines, websites, or publishing houses.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (optional): 6 months to 1 year</li><br>
+			<li>Teacher/Educator<br>
+			Teach English literature, creative writing, or language arts at the secondary or post-secondary level.<br>
+			Bachelor’s Degree: 4 years<br>
+Licensure Examination for Teachers (LET): 1-2 months of preparation, 1-2 days exam<br>
+Internship/Student Teaching: 6 months to 1 year<br>
+Work Experience: 1-3 years<br>
+Optional Certifications or Specializations: 3-6 months (optional)<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Journalist<br>
+			Research and write news articles, features, or opinion pieces for newspapers, magazines, or online media.<br>
+			Bachelor’s Degree: 4 years<br>
+Exams (Optional): 1-2 months of preparation (if any)<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Specialized Certifications (Optional): 3-6 months (optional)<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Content Creator/Copywriter<br>
+			Develop engaging content for businesses, blogs, or social media platforms.<br>
+			Bachelor’s Degree: 4 years<br>
+Exams (Optional): 1-2 months of preparation (if any)<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Specialized Certifications (Optional): 3-6 months (optional)<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZTtFZ6vfb0GV-TDmBBNjtCqH150qbh0new&s">
+		<div>
+		    <h2> Bachelor of Elementary Education</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  Ideal for aspiring educators, this course equips students with teaching strategies and methodologies to become effective elementary school teachers. It includes hands-on training and exposure to classroom environments.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Elementary School Teacher<br>
+			Teach foundational subjects like mathematics, science, language, and social studies to children in grades K-6.<br>
+			Bachelor’s Degree: 4 years<br>
+Licensure Examination for Teachers (LET): 6 months to 1 year of preparation<br>
+Internship: 6 months<br>
+Work Experience: 1-3 years<br>
+Specialized Certifications (Optional): 6 months to 2 years (optional)<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Special Education Teacher<br>
+			Work with children who have learning disabilities, developmental delays, or special needs.<br>
+			Bachelor’s Degree: 4 years<br>
+Licensure Examination for Teachers (LET): 6 months to 1 year of preparation<br>
+Internship: 6 months<br>
+Work Experience: 1-3 years<br>
+Specialized Certifications (Optional): 3 months to 2 years (optional)<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Education Administrator<br>
+			Manage school operations, curriculum development, and staff coordination in elementary schools.<br>
+			Bachelor’s Degree: 4 years<br>
+Licensure Examination for Teachers (LET): 6 months to 1 year of preparation<br>
+Internship or Fieldwork: 6 months to 1 year<br>
+Work Experience: 3-5 years<br>
+Master’s Degree: 2 years<br>
+Certifications: 6 months to 1 year (optional)<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Curriculum Developer<br>
+			Design and improve educational materials and teaching strategies for elementary education.<br>
+			Bachelor’s Degree: 4 years<br>
+Licensure Examination for Teachers (LET): 6 months to 1 year of preparation<br>
+Internship: 6 months<br>
+Work Experience: 2-5 years<br>
+Master’s Degree (Optional): 2 years<br>
+Certifications (Optional): 3 months to 1 year<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Education Consultant<br>
+			Advise schools, teachers, or parents on best practices for teaching methods, classroom management, or educational tools.<br>
+			Bachelor’s Degree in Education or Related Field: 4 years<br>
+Licensure Examination for Teachers (LET) (Optional): 6 months to 1 year of preparation<br>
+Internship: 6 months to 1 year<br>
+Work Experience: 3-5 years<br>
+Master’s Degree (Optional): 2 years<br>
+Certifications (Optional): 6 months to 1 year<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://www.sle.kit.edu/img/geographie-lehramt_header.jpg">
+		<div>
+		    <h2>Bachelor of Secondary Education (Major in English, Social Studies, or Filipino)</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  This program trains future high school teachers specializing in their chosen fields. It emphasizes lesson planning, classroom management, and effective teaching techniques.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>High School Teacher<br>
+			English Major: Teach English language, literature, and communication skills to high school students.<br>
+            Social Studies Major: Teach history, geography, and social sciences.<br>
+            Filipino Major: Teach Filipino language, literature, and culture.<br>
+			Bachelor’s Degree: 4 years<br>
+Licensure Examination for Teachers (LET): 6 months to 1 year<br>
+Internship: 6 months<br>
+Work Experience: 2-3 years<br>
+Master’s Degree (Optional): 2 years<br>
+Certifications (Optional): 3-6 months<br>
+Continuing Education and Professional Development: Ongoing	</li><br>
+			<li>Curriculum Specialist<br>
+			Design and develop teaching materials and programs for schools, focusing on English, Social Studies, or Filipino subjects.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Licensure Examination for Teachers (LET) (Optional): 6 months to 1 yea<br>r preparation<br>
+Teaching or Educational Administration Experience: 2-3 years<br>
+Certification (Optional): 6 months to 1 year<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Education Researcher<br>
+			Conduct studies on teaching methods, curriculum effectiveness, and student learning in the chosen major.<br>
+			Bachelor’s Degree in Education or Related Field: 4 years<br>
+Master’s Degree: 2 years<br>
+Work Experience: 2-3 years<br>
+Certifications (Optional): 6 months to 1 year<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Educational Content Writer<br>
+			Create textbooks, e-learning modules, or teaching guides in English, Social Studies, or Filipino.<br>
+			Bachelor’s Degree (in Education, English, or Related Field): 4 years<br>
+Work Experience (Internship or Freelance Writing): 1-2 years<br>
+Certification Programs (Optional): 6 months to 1 year<br>
+Portfolio Development: 6 months to 1 year<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+			<li>Language and Cultural Specialist<br>
+			English Major: Teach English as a Second Language (ESL) locally or internationally.<br>
+            Social Studies Major: Promote civic education and cultural understanding in community programs or NGOs.<br>
+            Filipino Major: Advocate for and teach Filipino language and culture to international learners or heritage communities.<br>
+			Bachelor’s Degree: 4 years<br>
+Language Proficiency and Cultural Immersion: 6 months to 2 years<br>
+Internship: 1-2 years<br>
+Certifications: 6 months to 1 year<br>
+Continuing Education and Professional Development: Ongoing</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hbxKl29VVvEmt0l0wzhTxv_pEFGWMK6Egg&s">
+		<div>
+		    <h2>Bachelor of Science in Tourism Management</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  A course designed for those interested in the tourism and hospitality industry. Students learn about travel operations, destination marketing, and event management, preparing them for roles as tour guides, travel agents, or tourism officers.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Travel Consultant/Tour Operator<br>
+			Plan and organize travel itineraries, book accommodations, and provide advice to travelers.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certifications: 6 months to 1 year</li><br>
+			<li>Event Planner<br>
+			Coordinate and manage events such as conferences, weddings, and corporate meetings.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certifications: 6 months to 1 year</li><br>
+			<li>Hotel and Resort Manager<br>
+			Oversee daily operations of hotels, resorts, or lodges, ensuring guest satisfaction and efficient management.<br>
+            Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications: 6 months to 1 year</li>
+			<li>Tourism Marketing Specialist<br>
+			Promote travel destinations, services, or experiences through marketing campaigns and social media strategies.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience1-2 years<br>
+Certifications: 3 to 6 months</li><br>
+			<li>Cruise Line or Airline Manager<br>
+			Manage operations, customer service, or logistics for cruise lines or airlines.<br>
+			Bachelor’s Degree (Tourism, Hospitality, Business Administration): 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 2-4 years<br>
+Certifications: 3 to 6 months</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://www.ufv.ca/media/assets/programs/background-images/Philosophy-480784350.jpg">
+		<div>
+		    <h2> Bachelor of Arts in Philosophy</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  This program focuses on exploring philosophical concepts, logic, and ethics. It sharpens critical thinking and reasoning skills, often leading to careers in academia, writing, or law.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Educator/Professor<br>
+			Teach philosophy, ethics, or critical thinking at the high school or university level.<br>
+			Bachelor's Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Doctor of Philosophy (Ph.D.) (Optional): 3-5 years<br>
+Teaching Experience	1-3 years (typically required before becoming a professor)</li><br>
+			<li>Ethics Consultant<br>
+			Provide guidance on ethical issues in fields like healthcare, technology, business, or law.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree (Optional): 2 years<br>
+Work Experience: 1-3 years<br>
+Certification (optional): 6 months to 2 years</li><br>
+			<li>Lawyer or Legal Analyst<br>
+			Philosophy graduates often excel in law school due to their analytical and logical reasoning skills.<br>
+			Bachelor’s Degree: 4 years<br>
+Law School: 4 years<br>
+Internship (required for Bar Exam eligibility): 3-6 months<br>
+Bar Exam Preparation: 6-12 months<br>
+Work Experience: 1-3 years<br>
+Bar Exam and Licensing (Lawyers): 2 days for the exam itself</li><br>
+			<li>Writer/Editor<br>
+			Work as a journalist, editor, or author, focusing on topics like philosophy, ethics, or culture.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship (Optional): 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional): 1-6 months<br>
+Master’s Degree (Optional): 2 years</li><br>
+			<li>Non-Profit or NGO Professional<br>
+			Work in organizations advocating for human rights, environmental justice, or social change.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship (Optional but recommended in NGOs): 3-6 months<br>
+Work Experience: 3 years<br>
+Certifications (Optional): 1-6 months<br>
+Master’s Degree (Optional): 2 years</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://www.maishahuru.com/img/bachelor-of-arts-in-sociology-in-tanzania.jpg">
+		<div>
+		    <h2>Bachelor of Arts in Sociology</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  A study of society, social interactions, and cultural phenomena. It prepares students for careers in social research, community development, or policy analysis.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Social Researcher<br>
+			Conduct qualitative and quantitative studies on societal trends, public policy, or cultural phenomena.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Master’s Degree (Optional): 2 years<br>
+Certifications (Optional): 1-6 months</li><br>
+			<li>Human Resources Specialist<br>
+			Apply understanding of social behavior to recruit, train, and manage employees in organizations.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certification: 1-6 months<br>
+Master’s Degree (optional): 2 years</li><br>
+			<li>Community Development Officer<br>
+			Design and implement programs to address community needs, such as housing, education, or healthcare.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certification: 1-6 months<br>
+Master’s Degree (optional): 2 years</li><br>
+			<li>Market Research Analyst<br>
+			Study consumer behavior and market trends to help businesses develop products or services.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certification: 6 months<br>
+Master’s Degree (optional): 2 years</li><br>
+			<li>Social Services Worker<br>
+			Provide support and resources to individuals and families in need, such as counseling or housing assistance.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 6 months to 1 year<br>
+Work Experience: 1-2 years<br>
+Licensure Exam: 2-3 months (study) + Exam time<br>
+Certification (optional): 1-6 months<br>
+Master’s Degree (optional: 2 years</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://usjr.edu.ph/wp-content/uploads/2023/09/international-studies.jpg">
+		<div>
+		    <h2> Bachelor of Science in International Studies</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  This course examines global issues, foreign relations, and international policies, ideal for students aiming for careers in diplomacy, foreign service, or global business.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Diplomat/Foreign Service Officer<br>
+			Represent your country abroad, manage diplomatic relations, and work on international policies.<br>
+			Bachelor’s Degree: 4 years<br>
+Foreign Service Officer Examination (preparation + exam): 3-6 months (preparation) + Exam duration (varies)<br>
+Internship (Optional): 3-6 months<br>
+Training Program: 6 months to 1 year<br>
+Work Experience: 1-2 years<br>
+Master’s Degree (optional): 2 years</li><br>
+			<li>International Business Specialist<br>
+			Assist companies in managing international operations, including market analysis, cross-cultural communication, and trade negotiations.<br>
+			Bachelor's Degree: 4 years<br>
+Internship: 3-6 months<br>
+Postgraduate Education (optional): 1-2 years<br>
+Certifications (optional): 6 months to 1 year<br>
+Work Experience: 1-2 years</li><br>
+			<li>Non-Governmental Organization (NGO) Worker<br>
+			Contribute to humanitarian, development, or environmental projects in a global context.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Postgraduate Degree (optional): 1-2 years<br>
+Certifications (optional)): 6 months to 1 year<br>
+Work Experience: 1-2 years</li><br>
+			<li>International Relations Analyst<br>
+			Analyze global political, economic, and social trends to provide insights for policy development or strategic planning.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Postgraduate Degree (optional): 1-2 years<br>
+Certifications (optional): 6 months to 1 year<br>
+Work Experience: 1-2 years<br>
+Exams Preparation: Several months</li><br>
+			<li>Cultural Affairs Officer<br>
+			Promote cultural exchange and understanding through events, educational programs, and community outreach.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Postgraduate Degree (optional): 1-2 years (optional)<br>
+Certifications (optional): 6 months to 1 year<br>
+Foreign Service Exam Preparation: Several months<br>
+Work Experience: 2-3 years</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://study.uq.edu.au/sites/default/files/styles/hero_banner_medium/public/2020-05/Arts-humanities-and-social-sciences-hero_0.jpg?itok=0oeX0AT6">
+		<div>
+		    <h2> Bachelor of Arts in Journalism</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  Students are trained to research, write, and report news and stories across various media platforms. It fosters integrity and professionalism for a career in journalism or media.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Reporter/Journalist<br>
+			Research, write, and report news stories for newspapers, magazines, online platforms, or broadcast media.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certifications (optional): 6 months to 1 year (optional)</li><br>
+			<li>Editor<br>
+			Oversee and refine written content, ensuring accuracy, clarity, and adherence to editorial standards.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (optional): 6 months to 1 year (optional)</li><br>
+			<li>Broadcast Journalist<br>
+			Present news stories on television or radio, conduct interviews, and cover live events<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 2-5 years<br>
+Certifications (optional): 3-6 months (optional)</li><br>
+			<li>Public Relations Specialist<br>
+			Create and manage communication strategies to maintain a positive public image for individuals, organizations, or brands.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 2-5 years<br>
+Certifications (optional): 3-6 months (optional)</li><br>
+			<li>Content Writer/Digital Marketer<br>
+			Develop engaging content for blogs, websites, or social media, often tailored for specific audiences.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications(Optional): 1-3 months per certification</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://i.ytimg.com/vi/Cp9MKbhca2Y/maxresdefault.jpg">
+		<div>
+		    <h2>Bachelor of Science in Development Communication</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  A multidisciplinary program that combines communication skills with social development, empowering students to create effective campaigns for societal change.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Development Communication Specialist<br>
+			Plan and implement communication strategies for social development projects, focusing on education, health, or environmental awareness.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications(Optional): 1-3 months per certification (Optional)</li><br>
+			<li>Public Information Officer<br>
+			Serve as the primary liaison between organizations and the public, sharing important information about programs and initiatives.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional): 1-3 months per certification (Optional)</li><br>
+			<li>Community Development Worker<br>
+			Facilitate programs that empower communities, such as literacy campaigns, livelihood training, or disaster preparedness.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications: 1-3 months per certification (Optional)</li><br>
+			<li>Media Producer for Development<br>
+			Create educational content such as radio programs, documentaries, or social media campaigns that address social issues.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications: 1-3 months per certification (Optional)</li><br>
+			<li>Research and Evaluation Officer<br>
+			Conduct studies to assess the effectiveness of communication strategies and their impact on target communities.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional): 1-3 months per certification</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://www.guc.ac.bw/wp-content/uploads/2018/04/Presentation1-1150x647.jpg">
+		<div>
+		    <h2> Bachelor of Science in Public Administration</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎ This course prepares students for managing public resources, implementing policies, and leading government or non-profit organizations. </p>
+		    <h3>Some career options for this degree</h3>
+			<li>Public Administrator<br>
+			Manage and oversee government programs, policies, and services at the local, regional, or national level.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional): 1-6 months per certification</li><br>
+			<li>Policy Analyst<br>
+			Research and evaluate public policies to address societal challenges, offering recommendations for improvements.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional): 3-6 months per certification</li><br>
+			<li>Human Resources Manager<br>
+			Oversee recruitment, training, and employee relations in public sector organizations.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 3-5 years<br>
+Certifications: 3-6 months per certification</li><br>
+			<li>Budget Officer/Financial Analyst<br>
+			Develop and manage budgets for government departments or public programs, ensuring transparency and efficient allocation of resources.<br>
+			Bachelor's Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 2-4 years<br>
+Certifications(Optional): 6-12 months per certification</li><br>
+			<li>Urban Planner<br>
+			Design and implement plans for urban development, focusing on infrastructure, zoning, and community services.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 2-4 years<br>
+Licensure Exam Preparation (PRC Board Exam): 3-6 months<br>
+Certifications (Optional): 1-2 years</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://css.upb.edu.ph/wp-content/uploads/2022/06/UI_History-1-2048x1423.png">
+		<div>
+		    <h2> Bachelor of Arts in History</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  A course for those passionate about exploring past events and their relevance to contemporary society. It develops research and analytical skills useful in teaching, archiving, or heritage management.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Historian<br>
+			Research, analyze, and interpret historical data to create publications, reports, or educational materials.<br>
+			Bachelor's Degree: 4 years<br>
+Master's Degree (Optional): 2 years<br>
+PhD (Optional): 3-5 years<br>
+Internship (Optional): 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional): 1-2 years</li><br>
+			<li>Archivist<br>
+			Preserve, organize, and manage historical documents, photographs, and artifacts.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree (Optional):2 years<br>
+Internship(Optional): 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certifications (Optional): 1-2 years</li><br>
+			<li>Museum Curator/Educator<br>
+			Design and manage exhibits, provide educational programs, and interpret historical artifacts for the public.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree (optional): 2 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-2 years<br>
+Certifications and Professional Development: 6 months to 1 year<br>
+Teaching License (for Museum Educators): 1 year (if applicable for teacher roles)</li><br>
+			<li>Academic/History Teacher<br>
+			Teach history at the secondary or post-secondary level, sharing knowledge about historical events and their significance.<br>
+			Bachelor’s Degree: 4 years<br>
+Licensure Exam (LET): 6 months to 1 year preparation<br>
+Internship: 1 semester (6 months) for BSEd, or up to 1 year for BA<br>
+Certifications (optional): 6 months to 1 year<br>
+Continuing Education: Ongoing throughout career</li><br>
+			<li>Policy Analyst<br>
+			Use historical insights to inform public policy development and analyze its historical context and implications.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (Optional): 3-6 months per certification</li><br>
+		</div>
+    </div>
+	
+
+	<div class="content-box">
+	    <img src="https://cssah.famu.edu/departments-and-centers/visual-arts-humanities-and-theatre/visual-arts/img/Visual_Arts_BS_640x480.jpg">
+		<div>
+		    <h2> Bachelor of Fine Arts (Major in Creative Writing or Visual Arts)</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  A program for students inclined toward the arts, honing their creative talents in writing or visual expression for careers in literature, design, or advertising.</p>
+			<h3>Some career options for this degree</h3>
+			<li>Writer/Author<br>
+			Create novels, short stories, poetry, or scripts for film, theater, or television.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree (Optional): 2 years<br>
+Internships: 3 to 6 months<br>
+Work Experience: 1 to 3 years for work experience<br>
+Building Portfolio and Publishing: Several months to years<br>
+Certifications (Optional): 3 months to 1 year</li><br>
+		    <li>Editor<br>
+			Refine and edit written content for books, magazines, or digital publications.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3-6 months<br>
+Work Experience: 1-3 years<br>
+Certifications (optional): 6 months to 1 year</li><br>
+			<li>Visual Artist<br>
+			Create original artwork (paintings, sculptures, installations) for galleries, exhibitions, or commissions.<br>
+			Bachelor’s Degree 4 years<br>
+Master’s Degree(Optional): 1 to 2 years<br>
+Internships: 3 to 6 months<br>
+Work Experience: 1 to 3 years<br>
+Certifications (Optional): 3 months to 1 year<br>
+Building a Portfolio: Ongoing process</li><br>
+			<li>Graphic Designer<br>
+			Design visual content for advertisements, websites, branding, or print media.<br>
+			Bachelor’s Degree: 4 years<br>
+Internships: 3 to 6<br>
+Work Experience: 1 to 3 years<br>
+Certifications (Optional): 3 to 6 months for certifications and workshops<br>
+Building a Portfolio: Ongoing process</li><br>
+			<li>Illustrator<br>
+			Create illustrations for books, magazines, advertising, or animation projects.<br>
+			Bachelor’s Degree: 4 years<br>
+Internships: 3 to 6 months<br>
+Work Experience: 1 to 3 years<br>
+Certifications (Optional): 3 to 6 months<br>
+Building a Portfolio: Ongoing process</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://css.upb.edu.ph/wp-content/uploads/2022/06/UI_Economics-2048x1423.png">
+		<div>
+		    <h2>Bachelor of Science in Economics</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  This course covers economic theories, financial systems, and policy analysis, preparing students for careers in banking, market research, or consultancy.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Economic Analyst<br>
+			Analyze economic trends, forecast market behaviors, and provide recommendations for business or policy decisions.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship (optional): 3 to 6 months<br>
+Work Experience	1 to 3 years<br>
+Certifications (optional): 3 to 6 months for each certification<br>
+Master’s Degree (optional): 1.5 to 2 years</li><br>
+			<li>Financial Analyst<br>
+			Evaluate financial data to guide investment decisions and assess the performance of stocks, bonds, and other financial instruments.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3 to 6 months<br>
+Work Experience: 2 years<br>
+Certifications: 2 to 4 years<br>
+Master’s Degree (optional): 1.5 to 2 years</li><br>
+			<li>Policy Advisor<br>
+			Provide economic expertise to shape public policies on issues like taxation, healthcare, or trade.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3 to 6 months<br>
+Work Experience: 2 to 4 years<br>
+Certifications (Optional): 6 months to 1 year<br>
+Master’s Degree (Optional): 1.5 to 2 years</li><br>
+			<li>Data Analyst/Statistician<br>
+			Use quantitative tools to interpret large datasets and generate insights for businesses or organizations.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3 to 6 months<br>
+Work Experience: 2 to 3 years<br>
+Certifications (Optional): 3 to 6 months (depending on certification)<br>
+Master’s Degree (Optional): 1.5 to 2 years</li><br>
+			<li>Market Research Analyst<br>
+			Study market conditions to identify potential sales opportunities and consumer behavior patterns.<br>
+			Bachelor’s Degree: 4 years<br>
+Internship: 3 to 6 months<br>
+Work Experience: 1 to 3 years<br>
+Certifications (Optional): 3 to 6 months<br>
+Master’s Degree (Optional): 1.5 to 2 years</li><br>
+		</div>
+    </div>
+	
+	<div class="content-box">
+	    <img src="https://media-exp1.licdn.com/dms/image/C5112AQEeGwEqMpEqzA/article-cover_image-shrink_600_2000/0/1525862445177?e=2147483647&v=beta&t=KWtCzPDyBLeY9GORSf8C9SkWCV9dSlEFQyJ4pJsl0TI">
+		<div>
+		    <h2> Bachelor of Science in Guidance and Counseling</h2>
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  Students are trained to provide guidance and support to individuals facing academic, career, or personal challenges. It includes psychological assessments and intervention planning.</p>
+		    <h3>Some career options for this degree</h3>
+			<li>Guidance Counselor<br>
+			Provide academic, career, and personal counseling to students in schools or universities.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Internship: 6 months to 1 year<br>
+Work Experience: 1 to 2 years<br>
+Licensure Examination Preparation: 3 to 6 months<br>
+Certifications (Optional): Few months to 1 year</li><br>
+			<li>Career Counselor<br>
+			Assist individuals in identifying career paths, developing skills, and navigating job opportunities.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Internship: 6 months to 1 year<br>
+Work Experience: 1 to 2 years<br>
+Licensure Examination Preparation: 3 to 6 months<br>
+Certifications (Optional): Few months to 1 year</li><br>
+			<li>Mental Health Counselor<br>
+			Support clients dealing with emotional, psychological, or behavioral challenges.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Internship: 6 months to 1 year<br>
+Work Experience: 1 to 2 years<br>
+Licensure Examination Preparation: 3 to 6 months<br>
+Certifications (Optional): Few months to 1 year</li><br>
+			<li>Rehabilitation Counselor<br>
+			Help individuals with physical, emotional, or developmental disabilities achieve independence and employment.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Internship: 6 months to 1 year<br>
+Work Experience: 1 to 2 years<br>
+Licensure Examination Preparation: 3 to 6 months<br>
+Certifications (Optional): Few months to 1 year</li><br>
+			<li>Marriage and Family Counselor<br>
+			Focus on helping couples and families navigate relationships and conflicts.<br>
+			Bachelor’s Degree: 4 years<br>
+Master’s Degree: 2 years<br>
+Internship: 6 months to 1 year<br>
+Work Experience: 1 to 2 years<br>
+Licensure Examination Preparation: 3 to 6 months<br>
+Certifications (Optional): 6 months to 1 year</li><br>
+		</div>		
+    </div>
+	
+	<div class="content-box">
+		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎  These courses highlight the versatility of the HUMSS strand, opening opportunities in education, media, public service, arts, and many other sectors. Each program fosters skills and knowledge tailored to various interests and career goals.</p>
+		</div>
+		
+	<div class="upperheader-box">
+	</div>
+	
+<div class="footer-box">
+    <p>Copyright © 2024 | All Rights Reserved</p>
+</div>
+	
+</body>
+</html>
