@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grade11 Page</title>
-	<style>
+    <style>
         body {
             background-image: url("https://media.gettyimages.com/id/1356443550/video/abstract-glitter-background-bokeh-shallow-depth-of-field-selective-focus-green-version.jpg?s=640x640&k=20&c=urYXnur50snEI7ow5P16924Qa7T1RTYm2gKao5V9664=");
             background-size: cover;
@@ -14,16 +14,42 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            color: white;
         }
-		
-		nav {
+
+        nav {
             background-color: rgba(3, 172, 19, 0.9);
             width: 98.3%;
             padding: 10px;
             border-radius: 10px;
-			margin-top: 0px;
             margin-bottom: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .left-section img {
+            height: 60px;
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        .school-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+        }
+
+        .school-info h3 {
+            margin: 0;
         }
 
         nav ul {
@@ -49,7 +75,7 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-        }  
+        }
 
         nav ul li button:hover {
             background-color: #043927;
@@ -84,8 +110,8 @@
         nav ul li .dropdown button:hover {
             background-color: #043927;
         }
-		
-		.header-box {
+
+        .header-box {
             background-color: rgba(255, 255, 255, 0.8);
             color: #333;
             text-align: center;
@@ -146,6 +172,13 @@
             font-size: 36px;
             margin: 0;
         }
+		
+		h3 {
+            font-size: 16px;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 
+                         0 0 30px rgba(255, 255, 255, 0.6), 
+                         0 0 45px rgba(255, 255, 255, 0.4);
+        }
 
         p {
             font-size: 20px;
@@ -173,9 +206,14 @@
 </head>
 <body>
 
-<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/471952702_1541669816533136_1690496519320867250_n.png?stp=dst-png_p480x480&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFajq7ij9EgUjoVa4BghGCa7NnCDheLv6bs2cIOF4u_pu2dk0l6MvsVTFMZJdiLqIIw2Z-EWfodmfneFH59h3Cd&_nc_ohc=se_LoCSO12cQ7kNvgFcpqsm&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHKMVE-Mfh1o897Sm1apgsxuK43oPxQIUBtwz4_KBwWjA&oe=67A550C8" alt="Logo" class="image-1">
-
 <nav>
+    <div class="left-section">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/471952702_1541669816533136_1690496519320867250_n.png?stp=dst-png_p480x480&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFajq7ij9EgUjoVa4BghGCa7NnCDheLv6bs2cIOF4u_pu2dk0l6MvsVTFMZJdiLqIIw2Z-EWfodmfneFH59h3Cd&_nc_ohc=se_LoCSO12cQ7kNvgFcpqsm&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHKMVE-Mfh1o897Sm1apgsxuK43oPxQIUBtwz4_KBwWjA&oe=67A550C8" alt="Logo">
+        <div class="school-info">
+            <h3>Virginia Ramirez-Cruz National High School</h3>
+            <h3>Siling Bata, Pandi, Bulacan</h3>
+        </div>
+    </div>
     <ul>
         <li><button onclick="window.open('Next.html')">Home</button></li>
         <li>
@@ -259,7 +297,7 @@
 	
 	
 	<div class="content-box">
-	    <img src="https://shs.cit.edu/pluginfile.php/165656/course/overviewfiles/eappheader1-e1537398632104.png">
+	    <img src="https://eapp11kepler.home.blog/wp-content/uploads/2019/09/image-7.png?w=370">
 		<div>
 		    <h2> English for Academic and Professional Purposes </h2>
 		    <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎ The EAPP Program mission is to prepare English language users to be confident and competent in both written and spoken communication through quality instruction in English that aims to develop linguistic, cultural, social and academic skills, highly contextualized and meaningful classroom practices</p>
