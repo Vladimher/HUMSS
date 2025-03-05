@@ -151,18 +151,6 @@
             font-size: 30px;
             margin-top: 0;
         }
-
-        .footer-box {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            width: 94.3%;
-            border: 5px solid black;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            margin-top: auto;
-        }
         
         .upperheader-box {
             background-color: rgba(0, 0, 0, 0.5);
@@ -205,7 +193,7 @@
             font-size: 14px;
             margin: 0;
         }
-		
+
         @keyframes fadeIn {
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
@@ -214,15 +202,108 @@
         body > * {
             animation: fadeIn 1.5s ease-out;
         }
-	</style>
+
+        .footer-container {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            width: 94.3%;
+            border: 5px solid black;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-top: auto;
+        }
+
+        .btn-section ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-section ul li {
+            display: inline;
+        }
+
+        .btn-section a {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 10px 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-section a:hover {
+            background-color: #043927;
+            color: white;
+            transform: scale(1.1);
+        }
+				
+        .scroll-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .scroll-buttons button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: rgba(3, 172, 19, 0.9);
+            color: black;
+            border-radius: 5px;
+        }
+        .scroll-buttons button:hover {
+            background-color: #043927;
+        }
+
+    </style>
 </head>
+<script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".btn-section a");
+
+        links.forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+    });
+    </script>
 <body>
+<div class="scroll-buttons">
+        <button onclick="scrollToTop()">Go to Top</button>
+        <button onclick="scrollToBottom()">Go to Bottom</button>
+    </div>
 
 <nav>
     <div class="left-section">
-        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/471952702_1541669816533136_1690496519320867250_n.png?stp=dst-png_p480x480&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFajq7ij9EgUjoVa4BghGCa7NnCDheLv6bs2cIOF4u_pu2dk0l6MvsVTFMZJdiLqIIw2Z-EWfodmfneFH59h3Cd&_nc_ohc=se_LoCSO12cQ7kNvgFcpqsm&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHKMVE-Mfh1o897Sm1apgsxuK43oPxQIUBtwz4_KBwWjA&oe=67A550C8" alt="Logo">
+        <img src="C:\Users\Admin\Downloads\475955316_513918581724993_4735173216811716247_n-removebg-preview.png" alt="logo">
         <div class="school-info">
-            <h3>Virginia Ramirez-Cruz National High School</h3>
+     		<h3>Virginia Ramirez-Cruz National High School</h3>
             <h3>Siling Bata, Pandi, Bulacan</h3>
         </div>
     </div>
@@ -254,7 +335,7 @@
 		<p>The Humanities and Social Sciences (HUMSS) strand serves as a gateway to a wide array of course options in college, each designed to prepare students for fulfilling careers in fields that prioritize critical thinking, communication, and the study of human society and culture. Here are some of the many courses HUMSS graduates can pursue, along with their respective descriptions:</p>
 	</div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-communication">
 	    <img src="https://www.maishahuru.com/img/bachelor-of-arts-in-mass-communication-in-tanzania.jpg">
 		<div>
 		    <h2> Bachelor of Arts in Communication</h2>
@@ -294,7 +375,7 @@
 		</div>
 	</div>
 	
-	<div class="content-box">
+	<div class="content-box"  id="ba-psychology">
 	    <img src="https://psychology.arizona.edu/sites/default/files/styles/az_large/public/2022-09/BS%20header_0.png.webp?itok=QGx1Bx1L">
 		<div>
 		    <h2>Bachelor of Science in Psychology</h2>
@@ -334,7 +415,7 @@
 		</div>
 	</div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-social-work">
 	    <img src="https://www.aeccglobal.com.ph/images/2023/01/02/study-social-work-courses.webp">
 		<div>
 		    <h2>Bachelor of Science in Social Work</h2>
@@ -381,7 +462,7 @@
 		</div>
 	</div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Political Science">
 	    <img src="https://www.maishahuru.com/img/bachelor-of-arts-in-political-science-and-public-administration-in-tanzania.jpg">
 		<div>
 		    <h2> Bachelor of Arts in Political Science</h2>
@@ -425,7 +506,7 @@ Optional Certifications: 3 months - 1 year per certification</li>
 		</div><br>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Criminilogy">
 	    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMhzEqX8xb4Vi66-bP0hEucK0XlplD4pp0Q&s">
 		<div>
 		    <h2>Bachelor of Science in Criminology</h2>
@@ -473,7 +554,7 @@ Optional Specialized Certifications: 3 months to 1 year per certification</li><b
 		</div>	
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Literature">
 	    <img src="https://ccap.co.ke/wp-content/uploads/2021/01/Literature-263x263.jpg">
 		<div>
 		    <h2>Bachelor of Arts in Literature</h2>
@@ -519,7 +600,7 @@ Continuing Education and Professional Development: Ongoing</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Elementary Education">
 	    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZTtFZ6vfb0GV-TDmBBNjtCqH150qbh0new&s">
 		<div>
 		    <h2> Bachelor of Elementary Education</h2>
@@ -571,7 +652,7 @@ Continuing Education and Professional Development: Ongoing</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Secondary Education">
 	    <img src="https://www.sle.kit.edu/img/geographie-lehramt_header.jpg">
 		<div>
 		    <h2>Bachelor of Secondary Education (Major in English, Social Studies, or Filipino)</h2>
@@ -622,7 +703,7 @@ Continuing Education and Professional Development: Ongoing</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Tourism Management">
 	    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hbxKl29VVvEmt0l0wzhTxv_pEFGWMK6Egg&s">
 		<div>
 		    <h2>Bachelor of Science in Tourism Management</h2>
@@ -661,7 +742,7 @@ Certifications: 3 to 6 months</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Philosophy">
 	    <img src="https://www.ufv.ca/media/assets/programs/background-images/Philosophy-480784350.jpg">
 		<div>
 		    <h2> Bachelor of Arts in Philosophy</h2>
@@ -704,7 +785,7 @@ Master’s Degree (Optional): 2 years</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Sociology">
 	    <img src="https://www.maishahuru.com/img/bachelor-of-arts-in-sociology-in-tanzania.jpg">
 		<div>
 		    <h2>Bachelor of Arts in Sociology</h2>
@@ -749,7 +830,7 @@ Master’s Degree (optional: 2 years</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-International Studies">
 	    <img src="https://usjr.edu.ph/wp-content/uploads/2023/09/international-studies.jpg">
 		<div>
 		    <h2> Bachelor of Science in International Studies</h2>
@@ -796,7 +877,7 @@ Work Experience: 2-3 years</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Journalism">
 	    <img src="https://study.uq.edu.au/sites/default/files/styles/hero_banner_medium/public/2020-05/Arts-humanities-and-social-sciences-hero_0.jpg?itok=0oeX0AT6">
 		<div>
 		    <h2> Bachelor of Arts in Journalism</h2>
@@ -835,7 +916,7 @@ Certifications(Optional): 1-3 months per certification</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Development Communication">
 	    <img src="https://i.ytimg.com/vi/Cp9MKbhca2Y/maxresdefault.jpg">
 		<div>
 		    <h2>Bachelor of Science in Development Communication</h2>
@@ -874,7 +955,7 @@ Certifications (Optional): 1-3 months per certification</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box"id="ba-Public Administration">
 	    <img src="https://www.guc.ac.bw/wp-content/uploads/2018/04/Presentation1-1150x647.jpg">
 		<div>
 		    <h2> Bachelor of Science in Public Administration</h2>
@@ -914,7 +995,7 @@ Certifications (Optional): 1-2 years</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box"id="ba-History">
 	    <img src="https://css.upb.edu.ph/wp-content/uploads/2022/06/UI_History-1-2048x1423.png">
 		<div>
 		    <h2> Bachelor of Arts in History</h2>
@@ -960,7 +1041,7 @@ Certifications (Optional): 3-6 months per certification</li><br>
     </div>
 	
 
-	<div class="content-box">
+	<div class="content-box" id="ba-Fine Arts">
 	    <img src="https://cssah.famu.edu/departments-and-centers/visual-arts-humanities-and-theatre/visual-arts/img/Visual_Arts_BS_640x480.jpg">
 		<div>
 		    <h2> Bachelor of Fine Arts (Major in Creative Writing or Visual Arts)</h2>
@@ -1005,7 +1086,7 @@ Building a Portfolio: Ongoing process</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Economics">
 	    <img src="https://css.upb.edu.ph/wp-content/uploads/2022/06/UI_Economics-2048x1423.png">
 		<div>
 		    <h2>Bachelor of Science in Economics</h2>
@@ -1049,7 +1130,7 @@ Master’s Degree (Optional): 1.5 to 2 years</li><br>
 		</div>
     </div>
 	
-	<div class="content-box">
+	<div class="content-box" id="ba-Guidance and Counseling">
 	    <img src="https://media-exp1.licdn.com/dms/image/C5112AQEeGwEqMpEqzA/article-cover_image-shrink_600_2000/0/1525862445177?e=2147483647&v=beta&t=KWtCzPDyBLeY9GORSf8C9SkWCV9dSlEFQyJ4pJsl0TI">
 		<div>
 		    <h2> Bachelor of Science in Guidance and Counseling</h2>
@@ -1105,8 +1186,33 @@ Certifications (Optional): 6 months to 1 year</li><br>
 	<div class="upperheader-box">
 	</div>
 	
-<div class="footer-box">
-    <p>Copyright © 2024 | All Rights Reserved</p>
+    <div class="footer-container">
+    <div class="btn-section">
+        <ul>
+            <li><a href="#ba-communication">Bachelor of Arts in Communication</a></li>
+            <li><a href="#ba-psychology">Bachelor of Science in Psychology</a></li>
+            <li><a href="#ba-social-work">Bachelor of Science in Social Work</a></li>
+            <li><a href="#ba-Political Science">Bachelor of Arts in Political Science</a></li>
+            <li><a href="#ba-Criminilogy">Bachelor of Science in Criminology</a></li>
+            <li><a href="#ba-Literature">Bachelor of Arts in Literature</a></li>
+            <li><a href="#ba-Elementary Education">Bachelor of Elementary Education</a></li>
+            <li><a href="#ba-Secondary Education">Bachelor of Secondary Education</a></li>
+            <li><a href="#ba-Tourism Management">Bachelor of Science in Tourism Management</a></li>
+            <li><a href="#ba-Philosophy">Bachelor of Arts in Philosophy</a></li>
+            <li><a href="#ba-Sociology">Bachelor of Arts in Sociology</a></li>
+            <li><a href="#ba-International Studies">Bachelor of Science in International Studies</a></li>
+            <li><a href="#ba-Journalism">Bachelor of Arts in Journalism</a></li>
+            <li><a href="#ba-Development Communication">Bachelor of Science in Development Communication</a></li>
+            <li><a href="#ba-Public Administration">Bachelor of Science in Public Administration</a></li>
+            <li><a href="#ba-History">Bachelor of Arts in History</a></li>
+            <li><a href="#ba-Fine Arts">Bachelor of Fine Arts</a></li>
+            <li><a href="#ba-Economics">Bachelor of Science in Economics</a></li>
+            <li><a href="#ba-Guidance and Counseling">Bachelor of Science in Guidance and Counseling</a></li>
+        </ul>
+    </div>
+    <div class="footer-box">
+        <p>Copyright © 2024 | All Rights Reserved</p>
+    </div>
 </div>
 	
 </body>
